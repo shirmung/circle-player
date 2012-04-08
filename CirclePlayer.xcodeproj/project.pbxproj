@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C17D2CC915314BE00009C55D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17D2CC815314BE00009C55D /* UIKit.framework */; };
+		C17D2CCB15314BE00009C55D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17D2CCA15314BE00009C55D /* Foundation.framework */; };
+		C17D2CCD15314BE00009C55D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17D2CCC15314BE00009C55D /* CoreGraphics.framework */; };
+		C17D2CD315314BE00009C55D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CD115314BE00009C55D /* InfoPlist.strings */; };
+		C17D2CD515314BE00009C55D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C17D2CD415314BE00009C55D /* main.m */; };
+		C17D2CD915314BE00009C55D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C17D2CD815314BE00009C55D /* AppDelegate.m */; };
+		C17D2CE515314CB10009C55D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C17D2CE315314CB10009C55D /* MainViewController.m */; };
+		C17D2CE615314CB10009C55D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CE415314CB10009C55D /* MainViewController.xib */; };
+		C17D2CE915314CDC0009C55D /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = C17D2CE815314CDC0009C55D /* Circle.m */; };
+		C17D2CEB15314D020009C55D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17D2CEA15314D010009C55D /* QuartzCore.framework */; };
+		C17D2CFE153155480009C55D /* pianoA4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CF6153155480009C55D /* pianoA4.wav */; };
+		C17D2CFF153155480009C55D /* pianoB4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CF7153155480009C55D /* pianoB4.wav */; };
+		C17D2D00153155480009C55D /* pianoC4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CF8153155480009C55D /* pianoC4.wav */; };
+		C17D2D01153155480009C55D /* pianoC5.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CF9153155480009C55D /* pianoC5.wav */; };
+		C17D2D02153155480009C55D /* pianoD4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CFA153155480009C55D /* pianoD4.wav */; };
+		C17D2D03153155480009C55D /* pianoE4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CFB153155480009C55D /* pianoE4.wav */; };
+		C17D2D04153155480009C55D /* pianoF4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CFC153155480009C55D /* pianoF4.wav */; };
+		C17D2D05153155480009C55D /* pianoG4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CFD153155480009C55D /* pianoG4.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C17D2CC415314BE00009C55D /* CirclePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CirclePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C17D2CC815314BE00009C55D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C17D2CCA15314BE00009C55D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C17D2CCC15314BE00009C55D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C17D2CD015314BE00009C55D /* CirclePlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CirclePlayer-Info.plist"; sourceTree = "<group>"; };
+		C17D2CD215314BE00009C55D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C17D2CD415314BE00009C55D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C17D2CD615314BE00009C55D /* CirclePlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CirclePlayer-Prefix.pch"; sourceTree = "<group>"; };
+		C17D2CD715314BE00009C55D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C17D2CD815314BE00009C55D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C17D2CE215314CB10009C55D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C17D2CE315314CB10009C55D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C17D2CE415314CB10009C55D /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		C17D2CE715314CDC0009C55D /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		C17D2CE815314CDC0009C55D /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		C17D2CEA15314D010009C55D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C17D2CF6153155480009C55D /* pianoA4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoA4.wav; sourceTree = "<group>"; };
+		C17D2CF7153155480009C55D /* pianoB4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoB4.wav; sourceTree = "<group>"; };
+		C17D2CF8153155480009C55D /* pianoC4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoC4.wav; sourceTree = "<group>"; };
+		C17D2CF9153155480009C55D /* pianoC5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoC5.wav; sourceTree = "<group>"; };
+		C17D2CFA153155480009C55D /* pianoD4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoD4.wav; sourceTree = "<group>"; };
+		C17D2CFB153155480009C55D /* pianoE4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoE4.wav; sourceTree = "<group>"; };
+		C17D2CFC153155480009C55D /* pianoF4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoF4.wav; sourceTree = "<group>"; };
+		C17D2CFD153155480009C55D /* pianoG4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoG4.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C17D2CC115314BE00009C55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17D2CEB15314D020009C55D /* QuartzCore.framework in Frameworks */,
+				C17D2CC915314BE00009C55D /* UIKit.framework in Frameworks */,
+				C17D2CCB15314BE00009C55D /* Foundation.framework in Frameworks */,
+				C17D2CCD15314BE00009C55D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C17D2CB915314BE00009C55D = {
+			isa = PBXGroup;
+			children = (
+				C17D2CCE15314BE00009C55D /* CirclePlayer */,
+				C17D2CC715314BE00009C55D /* Frameworks */,
+				C17D2CC515314BE00009C55D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C17D2CC515314BE00009C55D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C17D2CC415314BE00009C55D /* CirclePlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C17D2CC715314BE00009C55D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C17D2CEA15314D010009C55D /* QuartzCore.framework */,
+				C17D2CC815314BE00009C55D /* UIKit.framework */,
+				C17D2CCA15314BE00009C55D /* Foundation.framework */,
+				C17D2CCC15314BE00009C55D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C17D2CCE15314BE00009C55D /* CirclePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C17D2CD715314BE00009C55D /* AppDelegate.h */,
+				C17D2CD815314BE00009C55D /* AppDelegate.m */,
+				C17D2CE215314CB10009C55D /* MainViewController.h */,
+				C17D2CE315314CB10009C55D /* MainViewController.m */,
+				C17D2CE415314CB10009C55D /* MainViewController.xib */,
+				C17D2CE715314CDC0009C55D /* Circle.h */,
+				C17D2CE815314CDC0009C55D /* Circle.m */,
+				C17D2CCF15314BE00009C55D /* Supporting Files */,
+			);
+			path = CirclePlayer;
+			sourceTree = "<group>";
+		};
+		C17D2CCF15314BE00009C55D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C17D2CD015314BE00009C55D /* CirclePlayer-Info.plist */,
+				C17D2CD115314BE00009C55D /* InfoPlist.strings */,
+				C17D2CD415314BE00009C55D /* main.m */,
+				C17D2CD615314BE00009C55D /* CirclePlayer-Prefix.pch */,
+				C17D2CF5153155360009C55D /* Sounds */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C17D2CF5153155360009C55D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C17D2CF6153155480009C55D /* pianoA4.wav */,
+				C17D2CF7153155480009C55D /* pianoB4.wav */,
+				C17D2CF8153155480009C55D /* pianoC4.wav */,
+				C17D2CF9153155480009C55D /* pianoC5.wav */,
+				C17D2CFA153155480009C55D /* pianoD4.wav */,
+				C17D2CFB153155480009C55D /* pianoE4.wav */,
+				C17D2CFC153155480009C55D /* pianoF4.wav */,
+				C17D2CFD153155480009C55D /* pianoG4.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C17D2CC315314BE00009C55D /* CirclePlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C17D2CDC15314BE00009C55D /* Build configuration list for PBXNativeTarget "CirclePlayer" */;
+			buildPhases = (
+				C17D2CC015314BE00009C55D /* Sources */,
+				C17D2CC115314BE00009C55D /* Frameworks */,
+				C17D2CC215314BE00009C55D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CirclePlayer;
+			productName = CirclePlayer;
+			productReference = C17D2CC415314BE00009C55D /* CirclePlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C17D2CBB15314BE00009C55D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C17D2CBE15314BE00009C55D /* Build configuration list for PBXProject "CirclePlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C17D2CB915314BE00009C55D;
+			productRefGroup = C17D2CC515314BE00009C55D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C17D2CC315314BE00009C55D /* CirclePlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C17D2CC215314BE00009C55D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17D2CD315314BE00009C55D /* InfoPlist.strings in Resources */,
+				C17D2CE615314CB10009C55D /* MainViewController.xib in Resources */,
+				C17D2CFE153155480009C55D /* pianoA4.wav in Resources */,
+				C17D2CFF153155480009C55D /* pianoB4.wav in Resources */,
+				C17D2D00153155480009C55D /* pianoC4.wav in Resources */,
+				C17D2D01153155480009C55D /* pianoC5.wav in Resources */,
+				C17D2D02153155480009C55D /* pianoD4.wav in Resources */,
+				C17D2D03153155480009C55D /* pianoE4.wav in Resources */,
+				C17D2D04153155480009C55D /* pianoF4.wav in Resources */,
+				C17D2D05153155480009C55D /* pianoG4.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C17D2CC015314BE00009C55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17D2CD515314BE00009C55D /* main.m in Sources */,
+				C17D2CD915314BE00009C55D /* AppDelegate.m in Sources */,
+				C17D2CE515314CB10009C55D /* MainViewController.m in Sources */,
+				C17D2CE915314CDC0009C55D /* Circle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C17D2CD115314BE00009C55D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C17D2CD215314BE00009C55D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C17D2CDA15314BE00009C55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C17D2CDB15314BE00009C55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C17D2CDD15314BE00009C55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CirclePlayer/CirclePlayer-Prefix.pch";
+				INFOPLIST_FILE = "CirclePlayer/CirclePlayer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C17D2CDE15314BE00009C55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CirclePlayer/CirclePlayer-Prefix.pch";
+				INFOPLIST_FILE = "CirclePlayer/CirclePlayer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C17D2CBE15314BE00009C55D /* Build configuration list for PBXProject "CirclePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C17D2CDA15314BE00009C55D /* Debug */,
+				C17D2CDB15314BE00009C55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C17D2CDC15314BE00009C55D /* Build configuration list for PBXNativeTarget "CirclePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C17D2CDD15314BE00009C55D /* Debug */,
+				C17D2CDE15314BE00009C55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C17D2CBB15314BE00009C55D /* Project object */;
+}
