@@ -78,11 +78,11 @@
     
     float radius = sqrt(pow((firstPoint.x - lastPoint.x), 2) + pow((firstPoint.y - lastPoint.y), 2));
     
-    if (radius > 3.0) {
+    if (radius >= 3.0) {
         Circle *circle = [[Circle alloc] initWithFrame:self.view.bounds];
         circle.tag = currentTag;
         circle.center = CGPointMake(firstPoint.x - radius, firstPoint.y - radius);
-        circle.diameter = radius * 2;
+        circle.radius = radius;
         
         [self.view addSubview:circle];
         

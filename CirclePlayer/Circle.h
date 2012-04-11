@@ -11,10 +11,16 @@
 @interface Circle : UIView
 {
     CGPoint center;
+    float radius;
     float diameter;
+    
+    UIColor *color;
 }
 
 @property (nonatomic, assign) CGPoint center;
+@property (nonatomic, assign) float radius;
 @property (nonatomic, assign) float diameter;
+
+@property (nonatomic, assign) UIColor *color;
 
 @end
