@@ -6,6 +6,8 @@
 //  Copyright (c) 2012. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
+
 #import "MainViewController.h"
 #import "Circle.h"
 
@@ -79,11 +81,13 @@
     float radius = sqrt(pow((firstPoint.x - lastPoint.x), 2) + pow((firstPoint.y - lastPoint.y), 2));
     
     if (radius >= 3.0) {
-        Circle *circle = [[Circle alloc] initWithFrame:self.view.bounds];
+        Circle *circle = [[Circle alloc] initWithFrame:CGRectMake(firstPoint.x - radius, firstPoint.y - radius, radius * 2, radius * 2)];
         circle.tag = currentTag;
-        circle.center = CGPointMake(firstPoint.x - radius, firstPoint.y - radius);
         circle.radius = radius;
         
+        circle.layer.masksToBounds = YES;
+        circle.layer.cornerRadius = radius;
+
         [self.view addSubview:circle];
         
         [circle release];

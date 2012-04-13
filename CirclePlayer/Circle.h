@@ -15,6 +15,7 @@
     float diameter;
     
     UIColor *color;
+    NSString *pitch;
 }
 
 @property (nonatomic, assign) CGPoint center;
@@ -22,5 +23,6 @@
 @property (nonatomic, assign) float diameter;
 
 @property (nonatomic, assign) UIColor *color;
+@property (nonatomic, assign) NSString *pitch;
 
 @end

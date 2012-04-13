@@ -25,6 +25,7 @@
 		C17D2D03153155480009C55D /* pianoE4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CFB153155480009C55D /* pianoE4.wav */; };
 		C17D2D04153155480009C55D /* pianoF4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CFC153155480009C55D /* pianoF4.wav */; };
 		C17D2D05153155480009C55D /* pianoG4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CFD153155480009C55D /* pianoG4.wav */; };
+		C198F72F1537CB300023E11F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C198F72E1537CB300023E11F /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		C17D2CFB153155480009C55D /* pianoE4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoE4.wav; sourceTree = "<group>"; };
 		C17D2CFC153155480009C55D /* pianoF4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoF4.wav; sourceTree = "<group>"; };
 		C17D2CFD153155480009C55D /* pianoG4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoG4.wav; sourceTree = "<group>"; };
+		C198F72E1537CB300023E11F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C198F72F1537CB300023E11F /* AudioToolbox.framework in Frameworks */,
 				C17D2CEB15314D020009C55D /* QuartzCore.framework in Frameworks */,
 				C17D2CC915314BE00009C55D /* UIKit.framework in Frameworks */,
 				C17D2CCB15314BE00009C55D /* Foundation.framework in Frameworks */,
@@ -89,6 +92,7 @@
 		C17D2CC715314BE00009C55D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C198F72E1537CB300023E11F /* AudioToolbox.framework */,
 				C17D2CEA15314D010009C55D /* QuartzCore.framework */,
 				C17D2CC815314BE00009C55D /* UIKit.framework */,
 				C17D2CCA15314BE00009C55D /* Foundation.framework */,
