@@ -34,8 +34,8 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineWidth(context, 2.0);
     CGContextSetStrokeColorWithColor(context, [[UIColor blackColor] CGColor]);
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGRect rectangle = CGRectMake(self.bounds.origin.x + 3.0, self.bounds.origin.y + 3.0, diameter - 6.0, diameter - 6.0);
+    CGContextSetFillColorWithColor(context, [self.color CGColor]);
+    CGRect rectangle = CGRectMake(self.bounds.origin.x + 3.0, self.bounds.origin.y + 3.0, self.diameter - 6.0, self.diameter - 6.0);
     CGContextAddEllipseInRect(context, rectangle);
     CGContextStrokePath(context);
     CGContextFillEllipseInRect(context, rectangle);
@@ -43,26 +43,47 @@
 
 - (void)assignProperties
 {
-    center = CGPointMake(self.bounds.origin.x + radius, self.bounds.origin.y + radius);
-    diameter = radius * 2;
+    self.center = CGPointMake(self.bounds.origin.x + self.radius, self.bounds.origin.y + self.radius);
+    self.diameter = self.radius * 2;
 
-    if (radius >= 3.0 && radius < 100.0) color = [UIColor redColor];
-    else if (radius >= 100.0 && radius < 200.0) color = [UIColor orangeColor];
-    else if (radius >= 200.0 && radius < 300.0) color = [UIColor yellowColor];
-    else if (radius >= 300.0 && radius < 400.0) color = [UIColor greenColor];
-    else if (radius >= 400.0 && radius < 500.0) color = [UIColor blueColor];
-    else if (radius >= 500.0) color = [UIColor purpleColor];
+    if (self.radius >= 3.0 && self.radius < 100.0) { 
+        self.color = [UIColor redColor];
+        self.pitch = @"C4"; // no
+    } else if (self.radius >= 100.0 && self.radius < 200.0) {
+        self.color = [UIColor orangeColor];
+        self.pitch = @"D4";
+    } else if (self.radius >= 200.0 && self.radius < 300.0) {
+        self.color = [UIColor yellowColor];
+        self.pitch = @"E4";
+    } else if (self.radius >= 300.0 && self.radius < 400.0) {
+        self.color = [UIColor greenColor];
+        self.pitch = @"F4";
+    } else if (self.radius >= 400.0 && self.radius < 500.0) {
+        self.color = [UIColor cyanColor];
+        self.pitch = @"G4"; // no
+    } else if (self.radius >= 500.0 && self.radius < 600.0) {
+        self.color = [UIColor blueColor];
+        self.pitch = @"A4";
+    } else if (self.radius >= 600.0 && self.radius < 700.0) {
+        self.color = [UIColor magentaColor];
+        self.pitch = @"B4"; // no
+    } else if (self.radius >= 700.0) {
+        self.color = [UIColor purpleColor];
+        self.pitch = @"C5";
+    }
 }
+
+#pragma mark - Touch
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [touches anyObject];
 	CGPoint currentPoint = [touch locationInView:self];
     
-    float distance = sqrt(pow((center.x - currentPoint.x), 2) + pow((center.y - currentPoint.y), 2));
+    float distance = sqrt(pow((self.center.x - currentPoint.x), 2) + pow((self.center.y - currentPoint.y), 2));
 
-    if (distance <= radius) {
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"pianoA4" ofType:@"wav"];
+    if (distance <= self.radius) {
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"piano%@", self.pitch] ofType:@"wav"];
         SystemSoundID soundID;
         AudioServicesCreateSystemSoundID((CFURLRef)[NSURL fileURLWithPath:filePath], &soundID);
         AudioServicesPlaySystemSound(soundID);	
