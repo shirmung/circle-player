@@ -84,14 +84,23 @@
         Circle *circle = [[Circle alloc] initWithFrame:CGRectMake(firstPoint.x - radius, firstPoint.y - radius, radius * 2, radius * 2)];
         circle.tag = currentTag;
         circle.radius = radius;
-        
+
         circle.layer.masksToBounds = YES;
         circle.layer.cornerRadius = radius;
 
         [self.view addSubview:circle];
         
         [circle release];
+
+        UILabel *radiusLabel = [[UILabel alloc] initWithFrame:CGRectMake(firstPoint.x + radius/2, firstPoint.y - radius, 100, 20)];
+        radiusLabel.tag = currentTag;
+        radiusLabel.textAlignment = UITextAlignmentCenter;
+        radiusLabel.text = [NSString stringWithFormat:@"%f", radius];
         
+        [self.view addSubview:radiusLabel];
+
+        [radiusLabel release];
+
         if (self.view.subviews.count > 20) {
             for (UIView *view in self.view.subviews) {
                 if (view.tag == 1) [view removeFromSuperview];
