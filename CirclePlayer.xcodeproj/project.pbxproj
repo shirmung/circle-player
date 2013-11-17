@@ -17,14 +17,14 @@
 		C17D2CE615314CB10009C55D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CE415314CB10009C55D /* MainViewController.xib */; };
 		C17D2CE915314CDC0009C55D /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = C17D2CE815314CDC0009C55D /* Circle.m */; };
 		C17D2CEB15314D020009C55D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17D2CEA15314D010009C55D /* QuartzCore.framework */; };
-		C17D2CFE153155480009C55D /* pianoA4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CF6153155480009C55D /* pianoA4.wav */; };
-		C17D2CFF153155480009C55D /* pianoB4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CF7153155480009C55D /* pianoB4.wav */; };
-		C17D2D00153155480009C55D /* pianoC4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CF8153155480009C55D /* pianoC4.wav */; };
-		C17D2D01153155480009C55D /* pianoC5.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CF9153155480009C55D /* pianoC5.wav */; };
-		C17D2D02153155480009C55D /* pianoD4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CFA153155480009C55D /* pianoD4.wav */; };
-		C17D2D03153155480009C55D /* pianoE4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CFB153155480009C55D /* pianoE4.wav */; };
-		C17D2D04153155480009C55D /* pianoF4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CFC153155480009C55D /* pianoF4.wav */; };
-		C17D2D05153155480009C55D /* pianoG4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C17D2CFD153155480009C55D /* pianoG4.wav */; };
+		C18A569F1839454400E514AD /* pianoF4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C18A56971839454400E514AD /* pianoF4.m4a */; };
+		C18A56A01839454400E514AD /* pianoG4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C18A56981839454400E514AD /* pianoG4.m4a */; };
+		C18A56A11839454400E514AD /* pianoD4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C18A56991839454400E514AD /* pianoD4.m4a */; };
+		C18A56A21839454400E514AD /* pianoB4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C18A569A1839454400E514AD /* pianoB4.m4a */; };
+		C18A56A31839454400E514AD /* pianoC4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C18A569B1839454400E514AD /* pianoC4.m4a */; };
+		C18A56A41839454400E514AD /* pianoE4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C18A569C1839454400E514AD /* pianoE4.m4a */; };
+		C18A56A51839454400E514AD /* pianoA4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C18A569D1839454400E514AD /* pianoA4.m4a */; };
+		C18A56A61839454400E514AD /* pianoC5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C18A569E1839454400E514AD /* pianoC5.m4a */; };
 		C198F72F1537CB300023E11F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C198F72E1537CB300023E11F /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,14 +45,14 @@
 		C17D2CE715314CDC0009C55D /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
 		C17D2CE815314CDC0009C55D /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
 		C17D2CEA15314D010009C55D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		C17D2CF6153155480009C55D /* pianoA4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoA4.wav; sourceTree = "<group>"; };
-		C17D2CF7153155480009C55D /* pianoB4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoB4.wav; sourceTree = "<group>"; };
-		C17D2CF8153155480009C55D /* pianoC4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoC4.wav; sourceTree = "<group>"; };
-		C17D2CF9153155480009C55D /* pianoC5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoC5.wav; sourceTree = "<group>"; };
-		C17D2CFA153155480009C55D /* pianoD4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoD4.wav; sourceTree = "<group>"; };
-		C17D2CFB153155480009C55D /* pianoE4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoE4.wav; sourceTree = "<group>"; };
-		C17D2CFC153155480009C55D /* pianoF4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoF4.wav; sourceTree = "<group>"; };
-		C17D2CFD153155480009C55D /* pianoG4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pianoG4.wav; sourceTree = "<group>"; };
+		C18A56971839454400E514AD /* pianoF4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pianoF4.m4a; sourceTree = "<group>"; };
+		C18A56981839454400E514AD /* pianoG4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pianoG4.m4a; sourceTree = "<group>"; };
+		C18A56991839454400E514AD /* pianoD4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pianoD4.m4a; sourceTree = "<group>"; };
+		C18A569A1839454400E514AD /* pianoB4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pianoB4.m4a; sourceTree = "<group>"; };
+		C18A569B1839454400E514AD /* pianoC4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pianoC4.m4a; sourceTree = "<group>"; };
+		C18A569C1839454400E514AD /* pianoE4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pianoE4.m4a; sourceTree = "<group>"; };
+		C18A569D1839454400E514AD /* pianoA4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pianoA4.m4a; sourceTree = "<group>"; };
+		C18A569E1839454400E514AD /* pianoC5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pianoC5.m4a; sourceTree = "<group>"; };
 		C198F72E1537CB300023E11F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -131,14 +131,14 @@
 		C17D2CF5153155360009C55D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				C17D2CF6153155480009C55D /* pianoA4.wav */,
-				C17D2CF7153155480009C55D /* pianoB4.wav */,
-				C17D2CF8153155480009C55D /* pianoC4.wav */,
-				C17D2CF9153155480009C55D /* pianoC5.wav */,
-				C17D2CFA153155480009C55D /* pianoD4.wav */,
-				C17D2CFB153155480009C55D /* pianoE4.wav */,
-				C17D2CFC153155480009C55D /* pianoF4.wav */,
-				C17D2CFD153155480009C55D /* pianoG4.wav */,
+				C18A569B1839454400E514AD /* pianoC4.m4a */,
+				C18A56991839454400E514AD /* pianoD4.m4a */,
+				C18A569C1839454400E514AD /* pianoE4.m4a */,
+				C18A56971839454400E514AD /* pianoF4.m4a */,
+				C18A56981839454400E514AD /* pianoG4.m4a */,
+				C18A569D1839454400E514AD /* pianoA4.m4a */,
+				C18A569A1839454400E514AD /* pianoB4.m4a */,
+				C18A569E1839454400E514AD /* pianoC5.m4a */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -193,16 +193,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C18A56A21839454400E514AD /* pianoB4.m4a in Resources */,
+				C18A569F1839454400E514AD /* pianoF4.m4a in Resources */,
+				C18A56A01839454400E514AD /* pianoG4.m4a in Resources */,
+				C18A56A41839454400E514AD /* pianoE4.m4a in Resources */,
+				C18A56A31839454400E514AD /* pianoC4.m4a in Resources */,
+				C18A56A11839454400E514AD /* pianoD4.m4a in Resources */,
+				C18A56A51839454400E514AD /* pianoA4.m4a in Resources */,
 				C17D2CD315314BE00009C55D /* InfoPlist.strings in Resources */,
+				C18A56A61839454400E514AD /* pianoC5.m4a in Resources */,
 				C17D2CE615314CB10009C55D /* MainViewController.xib in Resources */,
-				C17D2CFE153155480009C55D /* pianoA4.wav in Resources */,
-				C17D2CFF153155480009C55D /* pianoB4.wav in Resources */,
-				C17D2D00153155480009C55D /* pianoC4.wav in Resources */,
-				C17D2D01153155480009C55D /* pianoC5.wav in Resources */,
-				C17D2D02153155480009C55D /* pianoD4.wav in Resources */,
-				C17D2D03153155480009C55D /* pianoE4.wav in Resources */,
-				C17D2D04153155480009C55D /* pianoF4.wav in Resources */,
-				C17D2D05153155480009C55D /* pianoG4.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

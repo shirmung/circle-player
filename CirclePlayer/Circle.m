@@ -48,7 +48,7 @@
 
     if (self.radius >= 3.0 && self.radius < 100.0) { 
         self.color = [UIColor redColor];
-        self.pitch = @"C4"; // no
+        self.pitch = @"C4";
     } else if (self.radius >= 100.0 && self.radius < 200.0) {
         self.color = [UIColor orangeColor];
         self.pitch = @"D4";
@@ -60,13 +60,13 @@
         self.pitch = @"F4";
     } else if (self.radius >= 400.0 && self.radius < 500.0) {
         self.color = [UIColor cyanColor];
-        self.pitch = @"G4"; // no
+        self.pitch = @"G4";
     } else if (self.radius >= 500.0 && self.radius < 600.0) {
         self.color = [UIColor blueColor];
         self.pitch = @"A4";
     } else if (self.radius >= 600.0 && self.radius < 700.0) {
         self.color = [UIColor magentaColor];
-        self.pitch = @"B4"; // no
+        self.pitch = @"B4";
     } else if (self.radius >= 700.0) {
         self.color = [UIColor purpleColor];
         self.pitch = @"C5";
@@ -83,7 +83,7 @@
     float distance = sqrt(pow((self.center.x - currentPoint.x), 2) + pow((self.center.y - currentPoint.y), 2));
 
     if (distance <= self.radius) {
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"piano%@", self.pitch] ofType:@"wav"];
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"piano%@", self.pitch] ofType:@"m4a"];
         SystemSoundID soundID;
         AudioServicesCreateSystemSoundID((CFURLRef)[NSURL fileURLWithPath:filePath], &soundID);
         AudioServicesPlaySystemSound(soundID);	
